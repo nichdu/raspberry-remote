@@ -2,3 +2,4 @@ send
 daemon
 *.o
 *.swp
+.DS_Store

@@ -10,9 +10,9 @@
 /*
  * define ip address and port here
  */
-$source = $_SERVER['SERVER_ADDR'];
-$target = '192.168.11.124';
-$port = 11337;
+define('SWITCH_SOCKET_SOURCE', 'localhost');
+define('SWITCH_SOCKET_DEST', 'localhost');
+define('SWITCH_SOCKET_PORT', 11337);
 
 /*
  * specify configuration of sockets to use
@@ -22,13 +22,9 @@ $port = 11337;
  *
  */
 $config=array(
-  array("00010", "01", "Schreibtisch"),
-  array("00010", "02", "Laptop"),
+  array("10001", "4", "Bettlicht"),
+  array("10001", "2", "Fernseher"),
   "",
-  "",
-  array("00001", "01", "Sofa Lampe"),
-  array("00001", "02", "Sofa Steckdose"),
-  array("00001", "03", "TV"),
-  array("00001", "04", "Verstaerker"),
+  array("10001", "1", "Schreibtisch"),
 )
 ?>
